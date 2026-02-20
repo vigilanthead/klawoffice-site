@@ -41,35 +41,41 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
+      gap:16px;
       padding:14px 0;
+      flex-wrap:wrap;
     }
 
     .brand{
       display:flex;
       align-items:center;
       gap:12px;
+      min-width:220px;
     }
     .brand img{
       width:34px;
       height:34px;
+      object-fit:contain;
     }
     .brand strong{
       font-size:13px;
       letter-spacing:.08em;
+      white-space:nowrap;
     }
 
     nav{
       display:flex;
       gap:20px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
     }
     nav a{
       font-size:13px;
       color:var(--muted);
       text-decoration:none;
+      padding:6px 0;
     }
-    nav a:hover{
-      color:var(--ink);
-    }
+    nav a:hover{ color:var(--ink); }
 
     /* Wordmark section */
     .wordmark-section{
@@ -79,37 +85,36 @@
       border-bottom:1px solid var(--line);
     }
     .wordmark-section img{
-      max-width:540px;
+      /* 540px * 2.5 = 1350px */
+      max-width:1350px;
       width:100%;
       height:auto;
+      display:block;
+      margin:0 auto;
     }
 
-    /* Hero image section */
+    /* Hero image section (image only, no message) */
     .hero-image{
       background:url("assets/hero-main.png") center/cover no-repeat;
-      padding:110px 0;
-      text-align:center;
-      color:#fff;
+      padding:140px 0;
       position:relative;
+      border-bottom:1px solid var(--line);
     }
     .hero-image::after{
       content:"";
       position:absolute;
       inset:0;
-      background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.55));
-    }
-    .hero-image h1{
-      position:relative;
-      font-size:32px;
-      font-weight:600;
-      font-family:ui-serif, Georgia, "Times New Roman", Times, serif;
-      margin:0;
-      letter-spacing:.02em;
+      /* keep a subtle overlay for mood consistency */
+      background:linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.45));
     }
 
     /* Intro card below hero */
+    section{
+      padding:70px 0;
+      border-bottom:1px solid var(--line);
+    }
+
     .intro{
-      padding:60px 0;
       background:#fff;
     }
     .intro-card{
@@ -118,17 +123,21 @@
       padding:40px;
       box-shadow:0 25px 60px rgba(15,23,50,.06);
     }
+    .intro-card h2{
+      font-family:ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size:26px;
+      font-weight:600;
+      margin:0 0 16px;
+      letter-spacing:.01em;
+    }
     .intro-card p{
       margin:0 0 16px;
       font-size:15.5px;
       color:rgba(15,23,50,.85);
       max-width:80ch;
     }
+    .intro-card p:last-child{ margin-bottom:0; }
 
-    section{
-      padding:70px 0;
-      border-bottom:1px solid var(--line);
-    }
     h2{
       font-family:ui-serif, Georgia, serif;
       font-size:22px;
@@ -142,6 +151,8 @@
     }
     @media (max-width:900px){
       .cards{ grid-template-columns:1fr; }
+      .hero-image{ padding:120px 0; }
+      .wordmark-section{ padding:56px 0 34px; }
     }
 
     .card{
@@ -163,6 +174,8 @@
       font-size:13px;
       color:var(--muted);
     }
+
+    a{ color:inherit; }
   </style>
 </head>
 
@@ -174,7 +187,7 @@
         <img src="assets/logo-symbol.png" alt="K Law Office symbol">
         <strong>K LAW OFFICE</strong>
       </div>
-      <nav>
+      <nav aria-label="Primary">
         <a href="#about">About</a>
         <a href="#profile">Profile</a>
         <a href="#civil-mediation">Civil/Mediation</a>
@@ -184,20 +197,19 @@
     </div>
   </div>
 
-  <!-- 1️⃣ Wordmark -->
+  <!-- 1) Wordmark (2.5x max width) -->
   <div class="wordmark-section">
     <img src="assets/wordmark.png" alt="K LAW OFFICE">
   </div>
 
-  <!-- 2️⃣ Hero Image -->
-  <div class="hero-image">
-    <h1>Civil & Criminal Litigation · Mediation</h1>
-  </div>
+  <!-- 2) Hero Image (image only; message removed) -->
+  <div class="hero-image" aria-label="Hero image"></div>
 
-  <!-- 3️⃣ Intro Card -->
+  <!-- 3) Intro (message moved here as title) -->
   <section class="intro" id="about">
     <div class="wrap">
       <div class="intro-card">
+        <h2>Civil &amp; Criminal Litigation · Mediation</h2>
         <p>
           Korea-based legal counsel for civil litigation, criminal matters, and mediation.
           We provide structured analysis, risk-weighted planning, and steady representation
@@ -223,63 +235,4 @@
         </div>
         <div class="card">
           <h3>Experience</h3>
-          <p>National Office of Investigation, Korean National Police Agency</p>
-          <p>Supreme Court of Korea & Seoul Central District Court</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Civil/Mediation -->
-  <section id="civil-mediation">
-    <div class="wrap">
-      <h2>Civil & Mediation</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Civil Litigation</h3>
-          <p>Contracts, damages, commercial disputes, procedural strategy.</p>
-        </div>
-        <div class="card">
-          <h3>Mediation</h3>
-          <p>Negotiation positioning and enforceable settlement design.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Criminal -->
-  <section id="criminal">
-    <div class="wrap">
-      <h2>Criminal Matters</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Defense</h3>
-          <p>Representation at investigation and trial stages.</p>
-        </div>
-        <div class="card">
-          <h3>Complaints & Victim Support</h3>
-          <p>Strategic filing and procedural follow-through.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:kim@klawoffice.kr">kim@klawoffice.kr</a></p>
-      <p lang="ko">Seoul, Republic of Korea · KST (UTC+9)</p>
-    </div>
-  </section>
-
-  <footer>
-    © <span id="y"></span> K LAW OFFICE. All rights reserved.
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>
+          <p>National Office of Investigation
