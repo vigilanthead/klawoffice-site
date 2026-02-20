@@ -33,3 +33,253 @@
       position:sticky;
       top:0;
       background:rgba(251,251,250,.92);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--line);
+      z-index:20;
+    }
+    .topbar-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .brand img{
+      width:34px;
+      height:34px;
+    }
+    .brand strong{
+      font-size:13px;
+      letter-spacing:.08em;
+    }
+
+    nav{
+      display:flex;
+      gap:20px;
+    }
+    nav a{
+      font-size:13px;
+      color:var(--muted);
+      text-decoration:none;
+    }
+    nav a:hover{
+      color:var(--ink);
+    }
+
+    /* Wordmark section */
+    .wordmark-section{
+      padding:70px 0 40px;
+      text-align:center;
+      background:#fff;
+      border-bottom:1px solid var(--line);
+    }
+    .wordmark-section img{
+      max-width:540px;
+      width:100%;
+      height:auto;
+    }
+
+    /* Hero image section */
+    .hero-image{
+      background:url("assets/hero-main.png") center/cover no-repeat;
+      padding:110px 0;
+      text-align:center;
+      color:#fff;
+      position:relative;
+    }
+    .hero-image::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.55));
+    }
+    .hero-image h1{
+      position:relative;
+      font-size:32px;
+      font-weight:600;
+      font-family:ui-serif, Georgia, "Times New Roman", Times, serif;
+      margin:0;
+      letter-spacing:.02em;
+    }
+
+    /* Intro card below hero */
+    .intro{
+      padding:60px 0;
+      background:#fff;
+    }
+    .intro-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:40px;
+      box-shadow:0 25px 60px rgba(15,23,50,.06);
+    }
+    .intro-card p{
+      margin:0 0 16px;
+      font-size:15.5px;
+      color:rgba(15,23,50,.85);
+      max-width:80ch;
+    }
+
+    section{
+      padding:70px 0;
+      border-bottom:1px solid var(--line);
+    }
+    h2{
+      font-family:ui-serif, Georgia, serif;
+      font-size:22px;
+      margin:0 0 18px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+    @media (max-width:900px){
+      .cards{ grid-template-columns:1fr; }
+    }
+
+    .card{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:26px;
+      background:#fff;
+    }
+    .card h3{
+      font-size:14px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin:0 0 12px;
+    }
+
+    footer{
+      padding:40px 0;
+      text-align:center;
+      font-size:13px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <img src="assets/logo-symbol.png" alt="K Law Office symbol">
+        <strong>K LAW OFFICE</strong>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#profile">Profile</a>
+        <a href="#civil-mediation">Civil/Mediation</a>
+        <a href="#criminal">Criminal</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 1️⃣ Wordmark -->
+  <div class="wordmark-section">
+    <img src="assets/wordmark.png" alt="K LAW OFFICE">
+  </div>
+
+  <!-- 2️⃣ Hero Image -->
+  <div class="hero-image">
+    <h1>Civil & Criminal Litigation · Mediation</h1>
+  </div>
+
+  <!-- 3️⃣ Intro Card -->
+  <section class="intro" id="about">
+    <div class="wrap">
+      <div class="intro-card">
+        <p>
+          Korea-based legal counsel for civil litigation, criminal matters, and mediation.
+          We provide structured analysis, risk-weighted planning, and steady representation
+          within the Korean legal system.
+        </p>
+        <p>
+          Our approach emphasizes clarity in procedure, evidence alignment, and practical
+          execution from initial consultation through resolution.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="profile">
+    <div class="wrap">
+      <h2>Profile</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Credentials</h3>
+          <p>Korean Attorney (Republic of Korea)</p>
+          <p>English support available</p>
+        </div>
+        <div class="card">
+          <h3>Experience</h3>
+          <p>National Office of Investigation, Korean National Police Agency</p>
+          <p>Supreme Court of Korea & Seoul Central District Court</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Civil/Mediation -->
+  <section id="civil-mediation">
+    <div class="wrap">
+      <h2>Civil & Mediation</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Civil Litigation</h3>
+          <p>Contracts, damages, commercial disputes, procedural strategy.</p>
+        </div>
+        <div class="card">
+          <h3>Mediation</h3>
+          <p>Negotiation positioning and enforceable settlement design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Criminal -->
+  <section id="criminal">
+    <div class="wrap">
+      <h2>Criminal Matters</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Defense</h3>
+          <p>Representation at investigation and trial stages.</p>
+        </div>
+        <div class="card">
+          <h3>Complaints & Victim Support</h3>
+          <p>Strategic filing and procedural follow-through.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kim@klawoffice.kr">kim@klawoffice.kr</a></p>
+      <p lang="ko">Seoul, Republic of Korea · KST (UTC+9)</p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> K LAW OFFICE. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
