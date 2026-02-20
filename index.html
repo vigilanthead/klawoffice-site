@@ -79,34 +79,37 @@
 
     /* Wordmark section */
     .wordmark-section{
-      padding:70px 0 40px;
-      text-align:center;
-      background:#fff;
-      border-bottom:1px solid var(--line);
-    }
-    .wordmark-section img{
-      /* 540px * 2.5 = 1350px */
-      max-width:1350px;
-      width:100%;
-      height:auto;
-      display:block;
-      margin:0 auto;
-    }
+  padding:0;
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.wordmark-section img{
+  max-width:1350px;
+  width:100%;
+  object-fit:cover;
+}
 
     /* Hero image section (image only, no message) */
     .hero-image{
-      background:url("assets/hero-main.png") center/cover no-repeat;
-      padding:140px 0;
-      position:relative;
-      border-bottom:1px solid var(--line);
-    }
-    .hero-image::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      /* keep a subtle overlay for mood consistency */
-      background:linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.45));
-    }
+  background:url("assets/hero-main.png") center/cover no-repeat;
+  min-height:100svh;
+  position:relative;
+  border-bottom:1px solid var(--line);
+}
+
+.hero-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.45));
+}
+
 
     /* Intro card below hero */
     section{
