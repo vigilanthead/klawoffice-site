@@ -15,7 +15,7 @@
   --soft:rgba(15,23,50,.06);
   --max:1100px;
   --wm-frame-h:260px;
-  --wm-pos-y:65%;
+  --wm-pos-y:42%;
 
   --hero-url:url("assets/hero-main.png");
 }
@@ -35,7 +35,12 @@ body{
 a{ color:inherit; text-decoration:none; }
 a.underline{ text-decoration:underline; text-underline-offset:3px; }
 
-.wrap{ max-width:var(--max); margin:0 auto; padding:0 22px; }
+.wrap{ 
+  max-width:var(--max); 
+  margin:0 auto; 
+  padding:0 22px;
+  min-width:0;
+}
 
 /* Topbar */
 .topbar{
@@ -75,7 +80,9 @@ nav a:hover{ background:var(--soft); color:var(--ink); }
   overflow:hidden;
 }
 .wordmark-frame img{
-  width:min(1350px,100%);
+  width:100%;
+  max-width:1350px;
+  min-width:0;
   height:100%;
   object-fit:cover;
   object-position:center var(--wm-pos-y);
@@ -368,6 +375,7 @@ footer{
         <h3>Email</h3>
         <p><a class="underline" href="mailto:kim@klawoffice.kr">kim@klawoffice.kr</a></p>
         <p class="muted">Suggested subject: <span class="mono">Inquiry – Korea Litigation &amp; Mediation</span></p>
+        <p class="mono">Email is the fastest way to reach us.</p>
       </div>
 
       <div class="card">
