@@ -120,7 +120,7 @@ nav a:hover{ background:var(--soft); color:var(--ink); }
 /* Sections */
 section{
   padding:44px 0;
-  border-bottom:none;
+  border-bottom:1px solid var(--line);
   background:#fff;
 }
 h2{
@@ -159,9 +159,13 @@ h2{
   grid-template-columns:1fr 1fr;
   gap:14px; margin-top:18px;
 }
-
+.grid2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px; margin-top:18px;
+}
 @media (max-width:900px){
-  .cards{ grid-template-columns:1fr; }
+  .cards, .grid2{ grid-template-columns:1fr; }
 }
 
 /* ✅ Mobile wordmark maximization (still used; now wordmark only shows on mobile) */
@@ -220,6 +224,8 @@ footer{
     display:none;
   }
 }
+
+/* Visual Identity block */
 
 .vi-title{
   font-size:14px;
@@ -318,6 +324,7 @@ footer{
       </div>
    </div>
 
+    <div class="card visual-identity-card">
       <h3>Visual Identity</h3>
 
       <p>
