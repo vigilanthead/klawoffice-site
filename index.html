@@ -223,6 +223,51 @@ footer{
     display:none;
   }
 }
+
+/* Visual Identity block */
+.visual-identity{
+  margin-top:40px;
+  border-top:1px solid var(--line);
+  padding-top:28px;
+}
+
+.vi-title{
+  font-size:14px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin:0 0 16px;
+  color:rgba(15,23,50,.75);
+}
+
+.vi-text{
+  margin:0 0 14px;
+  font-size:14.5px;
+  color:rgba(15,23,50,.85);
+  line-height:1.7;
+}
+
+.vi-text:last-child{
+  margin-bottom:0;
+}
+
+/* 📱 Mobile refinement */
+@media (max-width:600px){
+
+  .visual-identity{
+    margin-top:32px;
+    padding-top:22px;
+  }
+
+  .vi-title{
+    font-size:13px;
+    margin-bottom:14px;
+  }
+
+  .vi-text{
+    font-size:14px;
+    line-height:1.8;
+  }
+}
   
 </style>
 </head>
@@ -293,7 +338,23 @@ footer{
         </ul>
       </div>
     </div>
+    <div class="visual-identity">
+  <h3 class="vi-title">Visual Identity</h3>
+
+  <p class="vi-text">
+    <strong>The Monogram.</strong>
+    The KL monogram draws inspiration from the four trigrams of the Korean national flag (Taegukgi), 
+    traditionally associated with balance and order. 
+    Its structured geometry reflects clarity of thought and disciplined legal reasoning.
+  </p>
+
+  <p class="vi-text">
+    <strong>The Haetae.</strong>
+    The Haetae (Haechi), a mythical guardian creature in Korean tradition, symbolizes justice and moral discernment. 
+    Historically associated with the protection of law, it reflects a commitment to fairness and principled advocacy.
+  </p>
   </div>
+ </div>
 </section>
 
 <section id="profile">
