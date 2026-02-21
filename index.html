@@ -69,6 +69,10 @@ nav a:hover{ background:var(--soft); color:var(--ink); }
 nav a:focus-visible{ outline:2px solid rgba(15,23,50,.35); outline-offset:3px; }
 
 /* Mobile wordmark */
+.wm-only-mobile{ display:none; }
+@media (max-width:768px){
+  .wm-only-mobile{ display:block; }
+}
 .wordmark-section{
   background:#fff;
   border-bottom:1px solid var(--line);
@@ -220,7 +224,7 @@ footer{
       <img class="symbol" src="assets/logo-symbol.png" alt="K Law Office symbol" />
       <div class="name">
         <strong>K LAW OFFICE</strong>
-        <span lang="ko">Seoul, Republic of Korea · KST (UTC+9)</span>
+        <span lang="ko">Seoul, Republic of Korea</span>
       </div>
     </div>
     <nav aria-label="Primary">
@@ -233,7 +237,7 @@ footer{
   </div>
 </div>
 
-<div class="wordmark-section">
+<div class="wordmark-section wm-only-mobile">
   <div class="wrap">
     <div class="wordmark-frame">
       <img src="assets/wordmark.png" alt="K LAW OFFICE" loading="lazy" decoding="async">
