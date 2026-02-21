@@ -196,8 +196,14 @@ h2{
   color:rgba(15,23,50,.82);
 }
 .card p, .card li{ font-size:14.5px; color:rgba(15,23,50,.86); }
-.card ul{ margin:10px 0 0 18px; }
+.card ul{ margin:10px 0 0 18px; padding:0; }
+.card li{ margin:0 0 10px; line-height:1.6; }
+.card li:last-child{ margin-bottom:0; }
 
+@media (max-width:900px){
+  .card li{ margin-bottom:8px; }
+}
+  
 .notice{ font-size:12.5px; color:rgba(15,23,50,.62); }
 .muted{ color:var(--muted); }
 .mono{ font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }  
@@ -212,6 +218,16 @@ footer{
   display:flex; justify-content:space-between; gap:18px;
   flex-wrap:wrap; align-items:baseline;
 }
+#civil-mediation .card,
+#criminal .card{
+  min-height: 260px;
+}
+@media (max-width:900px){
+  #civil-mediation .card,
+  #criminal .card{
+    min-height: 220px;
+  }
+}  
 @media (max-width:768px){
   .hero-image{
     display:none;
@@ -320,7 +336,7 @@ footer{
   <div class="wrap">
     <h2>Civil Dispute Resolution</h2>
     <p class="lede">
-      Representation in civil litigation and mediation, with a focus on structured case strategy and practical resolution.
+      Representation in civil litigation and mediation, with a focus on structured case strategy and practical resolution
     </p>
 
     <div class="cards">
@@ -349,7 +365,7 @@ footer{
   <div class="wrap">
     <h2>Criminal Matters</h2>
     <p class="lede">
-    Representation in criminal matters from the investigation stage through trial, including representation of victims where appropriate, with careful attention to procedure, timing, and potential consequences.
+    Representation in criminal matters from the investigation stage through trial, including representation of victims where appropriate, with careful attention to procedure, timing, and potential consequences
     </p>
 
     <div class="cards">
