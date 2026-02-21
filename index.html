@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>K LAW OFFICE | Civil & Criminal Litigation · Mediation</title>
-<meta name="description" content="K LAW OFFICE — Korea-qualified attorney handling civil litigation, criminal matters, and mediation." />
+<meta name="description" content="K LAW OFFICE — Korean-qualified attorney handling civil litigation, criminal matters, and mediation." />
 
 <style>
 :root{
@@ -43,20 +43,6 @@ a.underline{ text-decoration:underline; text-underline-offset:3px; }
   min-width:0;
 }
 
-/* ✅ Responsive visibility control
-   - Mobile: show wordmark, hide main headline
-   - Desktop: hide wordmark, show main headline
-*/
-.wm-only-mobile{ display:block; }
-.main-only-desktop{ display:block; }
-
-@media (max-width:768px){
-  .main-only-desktop{ display:none; }
-}
-@media (min-width:769px){
-  .wm-only-mobile{ display:none; }
-}
-
 /* Topbar */
 .topbar{
   position:sticky; top:0; z-index:20;
@@ -66,21 +52,23 @@ a.underline{ text-decoration:underline; text-underline-offset:3px; }
 }
 .topbar-inner{
   display:flex; align-items:center; justify-content:space-between;
-  gap:14px; padding:12px 0; flex-wrap:wrap;
+  gap:14px; padding:16px 0; flex-wrap:wrap; /* ✅ 1안: padding 증가 */
 }
 .brand{ display:flex; align-items:center; gap:12px; min-width:220px; }
-.brand img.symbol{ width:34px; height:34px; object-fit:contain; }
+.brand img.symbol{ width:40px; height:40px; object-fit:contain; } /* ✅ 1안: 로고 증가 */
 .brand .name{ display:flex; flex-direction:column; line-height:1.1; }
 .brand .name strong{ font-size:13px; letter-spacing:.08em; }
 .brand .name span{ font-size:12px; color:var(--muted); }
 
 nav{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
 nav a{
-  font-size:13px; color:var(--muted);
-  padding:6px 8px; border-radius:10px;
+  font-size:14px; color:var(--muted);              /* ✅ 1안: font-size 증가 */
+  padding:7px 10px; border-radius:10px;            /* ✅ 1안: padding 증가 */
 }
 nav a:hover{ background:var(--soft); color:var(--ink); }
+nav a:focus-visible{ outline:2px solid rgba(15,23,50,.35); outline-offset:3px; }
 
+/* Mobile wordmark */
 .wordmark-section{
   background:#fff;
   border-bottom:1px solid var(--line);
@@ -98,7 +86,6 @@ nav a:hover{ background:var(--soft); color:var(--ink); }
   max-width:1350px;
   height:100%;
   display:block;
-
   object-fit:cover;
   object-position:center var(--wm-pos-y);
 }
@@ -157,28 +144,11 @@ h2{
 .cards{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:14px; margin-top:18px;
-}
-.grid2{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px; margin-top:18px;
+  gap:14px;
+  margin-top:18px;
 }
 @media (max-width:900px){
-  .cards, .grid2{ grid-template-columns:1fr; }
-}
-
-/* ✅ Mobile wordmark maximization (still used; now wordmark only shows on mobile) */
-@media (max-width:600px){
-  .wrap{ padding:0 18px; }
-
-  .wordmark-frame{
-    height:var(--wm-h-mobile);
-  }
-
-  .wordmark-section{
-    padding:24px 0 18px;
-  }
+  .cards{ grid-template-columns:1fr; }
 }
 
 .card{
@@ -200,13 +170,9 @@ h2{
 .card li{ margin:0 0 8px; line-height:1.6; }
 .card li:last-child{ margin-bottom:0; }
 
-@media (max-width:900px){
-  .card li{ margin-bottom:8px; }
-}
-  
 .notice{ font-size:12.5px; color:rgba(15,23,50,.62); }
 .muted{ color:var(--muted); }
-.mono{ font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }  
+.mono{ font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 footer{
   padding:30px 0 56px;
@@ -219,40 +185,30 @@ footer{
   display:flex; justify-content:space-between; gap:18px;
   flex-wrap:wrap; align-items:baseline;
 }
+
+/* Responsive */
 @media (max-width:768px){
-  .hero-image{
-    display:none;
-  }
+  .hero-image{ display:none; }
 }
 
-/* Visual Identity block */
-
-.vi-title{
-  font-size:14px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  margin:0 0 16px;
-  color:rgba(15,23,50,.75);
+/* Mobile wordmark maximization */
+@media (max-width:600px){
+  .wrap{ padding:0 18px; }
+  .wordmark-frame{ height:var(--wm-h-mobile); }
+  .wordmark-section{ padding:24px 0 18px; }
 }
 
-.vi-text{
-  margin:0 0 14px;
-  font-size:14.5px;
-  color:rgba(15,23,50,.85);
-  line-height:1.7;
-}
-
-.vi-text:last-child{
-  margin-bottom:0;
-}
-
+/* Visual Identity card */
 .visual-identity-card{
-  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-family:ui-serif, Georgia, "Times New Roman", Times, serif;
   margin-top:40px;
   padding-top:28px;
   border-top:1px solid rgba(15,23,50,.12);
 }
-  
+
+/* Utility (inline style 제거용) */
+.p-gap{ margin-top:12px; }
+.mt-16{ margin-top:16px; }
 </style>
 </head>
 
@@ -277,22 +233,21 @@ footer{
   </div>
 </div>
 
-<!-- ✅ Mobile only -->
-<div class="wordmark-section wm-only-mobile">
+<div class="wordmark-section">
   <div class="wrap">
     <div class="wordmark-frame">
-      <img src="assets/wordmark.png" alt="K LAW OFFICE">
+      <img src="assets/wordmark.png" alt="K LAW OFFICE" loading="lazy" decoding="async">
     </div>
   </div>
 </div>
 
-<div class="hero-image" aria-label="Hero image"></div>
+<div class="hero-image" aria-hidden="true"></div>
 
 <section id="about">
   <div class="wrap">
     <h2>About K Law Office</h2>
-      
-    <h1 class="about-headline main">Civil &amp; Criminal Litigation · Mediation</h1>
+
+    <h1 class="about-headline">Civil &amp; Criminal Litigation · Mediation</h1>
 
     <div class="about-block">
       <p class="about-copy">
@@ -313,7 +268,7 @@ footer{
           <li>Consistent representation in and out of court</li>
         </ul>
       </div>
-      
+
       <div class="card">
         <h3>Scope</h3>
         <ul>
@@ -322,7 +277,7 @@ footer{
           <li>Mediation and negotiated resolutions with enforceable settlement terms</li>
         </ul>
       </div>
-   </div>
+    </div>
 
     <div class="card visual-identity-card">
       <h3>Visual Identity</h3>
@@ -334,11 +289,11 @@ footer{
         Its structured geometry reflects clarity of thought and disciplined legal reasoning.
       </p>
 
-      <p style="margin-top:12px;">
+      <p class="p-gap">
         <strong>The Haetae.</strong>
-       The Haetae (Haechi), a mythical guardian creature in Korean tradition, symbolizes justice and moral discernment.
-       Historically associated with the protection of law, it reflects a commitment to fairness and principled advocacy.
-     </p>
+        The Haetae (Haechi), a mythical guardian creature in Korean tradition, symbolizes justice and moral discernment.
+        Historically associated with the protection of law, it reflects a commitment to fairness and principled advocacy.
+      </p>
     </div>
   </div>
 </section>
@@ -350,7 +305,7 @@ footer{
       Korean-qualified attorney representing foreign residents and overseas clients
     </p>
 
-    <div class="grid2">
+    <div class="cards">
       <div class="card">
         <h3>Credentials</h3>
         <p><strong>Qualification:</strong> Attorney at Law (Republic of Korea)</p>
@@ -402,7 +357,7 @@ footer{
   <div class="wrap">
     <h2>Criminal Matters</h2>
     <p class="lede">
-    Representation in criminal matters from the investigation stage through trial, including representation of victims where appropriate, with careful attention to procedure, timing, and potential consequences
+      Representation in criminal matters from the investigation stage through trial, including representation of victims where appropriate, with careful attention to procedure, timing, and potential consequences
     </p>
 
     <div class="cards">
@@ -451,11 +406,9 @@ footer{
     <p class="lede">
       Please email us with a brief description of your matter, the relevant timeline, and your preferred language of communication.
     </p>
-    <p class="notice">
-    All inquiries are handled with discretion.
-    </p>
-    
-    <div class="grid2">
+    <p class="notice">All inquiries are handled with discretion.</p>
+
+    <div class="cards">
       <div class="card">
         <h3>Email</h3>
         <p><a class="underline" href="mailto:kim@klawoffice.kr">kim@klawoffice.kr</a></p>
@@ -470,7 +423,7 @@ footer{
       </div>
     </div>
 
-    <p class="notice" style="margin-top:16px;">
+    <p class="notice mt-16">
       This website is for general informational purposes only and does not constitute legal advice.
       Contacting us does not create an attorney-client relationship unless and until a formal engagement is agreed.
     </p>
