@@ -89,7 +89,9 @@ footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:
 .notice{font-size:12.5px;color:rgba(15,23,50,.62);}
 
 :lang(ko){word-break:keep-all;line-height:1.75;}
-[data-lang]{display:none;}
+[data-lang="ko"]{ display:none; }
+html[lang="ko"] [data-lang="ko"]{ display:inline; }
+html[lang="ko"] [data-lang="en"]{ display:none; }
 </style>
 </head>
 <body>
@@ -257,17 +259,31 @@ footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:
 </footer>
 
 <script>
-document.getElementById('y').textContent = new Date().getFullYear();
-let currentLang='en';
+document.getElementById('y').textContent=new Date().getFullYear();
+
 function applyLang(lang){
-  currentLang=lang;
-  document.documentElement.lang=lang;
-  document.querySelectorAll('[data-lang]').forEach(el=>{el.style.display=el.dataset.lang===lang?'':' none';});
-  document.querySelectorAll('[data-set-lang]').forEach(btn=>{const a=btn.dataset.setLang===lang;btn.classList.toggle('active',a);btn.setAttribute('aria-pressed',String(a));});
-  try{localStorage.setItem('klawoffice-lang',lang);}catch(e){}
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+    const active = btn.dataset.setLang === lang;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+
+  try{
+    localStorage.setItem('klawoffice-lang', lang);
+  }catch(e){}
 }
-document.querySelectorAll('[data-set-lang]').forEach(btn=>{btn.addEventListener('click',()=>applyLang(btn.dataset.setLang));});
-(function(){let s;try{s=localStorage.getItem('klawoffice-lang');}catch(e){}applyLang(s||(navigator.language&&navigator.language.startsWith('ko')?'ko':'en'));})();
+
+document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+  btn.addEventListener('click', ()=>applyLang(btn.dataset.setLang));
+});
+
+(function(){
+  let s;
+  try{s=localStorage.getItem('klawoffice-lang');}catch(e){}
+  applyLang(s||(navigator.language&&navigator.language.startsWith('ko')?'ko':'en'));
+})();
 </script>
 </body>
 </html>
