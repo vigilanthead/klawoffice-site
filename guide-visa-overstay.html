@@ -59,7 +59,9 @@ a{color:inherit;text-decoration:none;}a.underline{text-decoration:underline;text
 footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:var(--paper);border-top:1px solid var(--line);}
 .foot-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline;}
 .muted{color:var(--muted);}.notice{font-size:12.5px;color:rgba(15,23,50,.62);}
-:lang(ko){word-break:keep-all;line-height:1.75;}[data-lang]{display:none;}
+:lang(ko){word-break:keep-all;line-height:1.75;}[data-lang="ko"]{ display:none; }
+html[lang="ko"] [data-lang="ko"]{ display:inline; }
+html[lang="ko"] [data-lang="en"]{ display:none; }
 </style>
 </head>
 <body>
@@ -140,4 +142,31 @@ footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:
 
   <h2>참고</h2>
   <p>이 문제는 외국인에게 특화된 사안으로, 보다 자세한 내용은 영문 페이지를 참고하시기 바랍니다.</p>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+
+function applyLang(lang){
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+    const active = btn.dataset.setLang === lang;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+
+  try{
+    localStorage.setItem('klawoffice-lang', lang);
+  }catch(e){}
+}
+
+document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+  btn.addEventListener('click', ()=>applyLang(btn.dataset.setLang));
+});
+
+(function(){
+  let s;
+  try{s=localStorage.getItem('klawoffice-lang');}catch(e){}
+  applyLang(s||(navigator.language&&navigator.language.startsWith('ko')?'ko':'en'));
+})();
+</script>
 </div>
