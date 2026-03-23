@@ -68,7 +68,6 @@ a{color:inherit;text-decoration:none;}
 a.underline{text-decoration:underline;text-underline-offset:3px;}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 22px;min-width:0;}
 
-/* ===== 핵심 개선 패치 (한글 타이포그래피) ===== */
 :lang(ko){
   word-break:keep-all;
   line-height:1.8;
@@ -207,6 +206,15 @@ footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:
 [data-lang="ko"]{ display:none; }
 html[lang="ko"] [data-lang="ko"]{ display:inline; }
 html[lang="ko"] [data-lang="en"]{ display:none; }
+[data-lang="ko"]:empty{
+  display:none;
+}
+.lede:empty{
+  display:none;
+}
+:lang(ko) #profile .lede{
+  display:none;
+}
 </style>
 </head>
 <body>
@@ -221,7 +229,6 @@ html[lang="ko"] [data-lang="en"]{ display:none; }
       </div>
     </div>
 
-    <!-- ★ 수정: data-nav 제거, HTML에 텍스트 직접 기재 → JS 없이도 메뉴 표시 -->
     <nav aria-label="Primary">
       <a href="#about">
         <span data-lang="en">About K Law Office</span><span data-lang="ko">소개</span>
@@ -316,7 +323,7 @@ html[lang="ko"] [data-lang="en"]{ display:none; }
     <h2><span data-lang="en">Profile</span><span data-lang="ko">프로필</span></h2>
     <p class="lede">
       <span data-lang="en">Korean-qualified attorney representing foreign residents and overseas clients</span>
-      <span data-lang="ko" lang="ko">&nbsp;</span>
+      <span data-lang="ko" lang="ko"></span>
     </p>
     <div class="cards">
       <div class="card">
@@ -524,10 +531,8 @@ html[lang="ko"] [data-lang="en"]{ display:none; }
 document.getElementById('y').textContent = new Date().getFullYear();
 
 function applyLang(lang) {
-  // html[lang] 속성 하나만 바꾸면 CSS 선택자가 모든 전환을 처리
   document.documentElement.lang = lang;
 
-  // 토글 버튼 활성 상태 업데이트
   document.querySelectorAll('[data-set-lang]').forEach(btn => {
     const active = btn.dataset.setLang === lang;
     btn.classList.toggle('active', active);
@@ -541,7 +546,6 @@ document.querySelectorAll('[data-set-lang]').forEach(btn => {
   btn.addEventListener('click', () => applyLang(btn.dataset.setLang));
 });
 
-// 초기 언어 결정: 저장값 → 브라우저 언어 → 영어 기본
 (function(){
   let saved;
   try { saved = localStorage.getItem('klawoffice-lang'); } catch(e){}
