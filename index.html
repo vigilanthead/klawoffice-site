@@ -58,6 +58,7 @@
   --wm-pos-y:48%;
   --wm-h-mobile:54svh;
   --hero-url:url("assets/hero-main.png");
+  --hero-ko:url("assets/hero-sub.png");
 }
 *{box-sizing:border-box;}
 html,body{height:100%;}
@@ -66,6 +67,63 @@ body{margin:0;background:var(--paper);color:var(--ink);line-height:1.65;font-fam
 a{color:inherit;text-decoration:none;}
 a.underline{text-decoration:underline;text-underline-offset:3px;}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 22px;min-width:0;}
+
+/* ===== 핵심 개선 패치 (한글 타이포그래피) ===== */
+:lang(ko){
+  word-break:keep-all;
+  line-height:1.8;
+  font-family:
+    "Pretendard",
+    "Noto Sans KR",
+    "Apple SD Gothic Neo",
+    "Malgun Gothic",
+    system-ui,
+    sans-serif;
+}
+
+:lang(ko) h1,
+:lang(ko) h2,
+:lang(ko) h3{
+  font-family:
+    "Pretendard",
+    "Noto Sans KR",
+    sans-serif;
+  letter-spacing:-0.01em;
+}
+
+:lang(ko) .about-headline{
+  font-size:32px;
+  font-weight:700;
+  letter-spacing:-0.02em;
+  max-width:520px;
+}
+
+:lang(ko) .about-copy,
+:lang(ko) .card p,
+:lang(ko) .card li{
+  font-size:15px;
+  line-height:1.85;
+}
+
+:lang(ko) .card p,
+:lang(ko) .card li{
+  font-size:15px;
+}
+
+:lang(ko) .guide-title{
+  font-size:16px;
+  letter-spacing:-0.01em;
+}
+
+:lang(ko) .guide-desc{
+  font-size:14px;
+  line-height:1.7;
+}
+
+:lang(ko) nav a{
+  font-size:13.5px;
+  padding:6px 8px;
+}
 
 /* Lang toggle */
 .lang-toggle{display:flex;align-items:center;gap:2px;background:var(--soft);border-radius:20px;padding:3px;flex-shrink:0;}
@@ -95,6 +153,7 @@ nav a:focus-visible{outline:2px solid rgba(15,23,50,.35);outline-offset:3px;}
 
 /* Hero */
 .hero-image{background:var(--hero-url) center/cover no-repeat;min-height:100svh;position:relative;border-bottom:1px solid var(--line);}
+html[lang="ko"] .hero-image{background:var(--hero-ko) center/cover no-repeat;}
 .hero-image::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.42));}
 
 /* Sections */
@@ -132,7 +191,7 @@ footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:
 .p-gap{margin-top:12px;}
 .mt-16{margin-top:16px;}
 
-/* ── Legal Guide section ── */
+/* Guide */
 #guide{background:var(--paper);}
 .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
 @media(max-width:900px){.guide-grid{grid-template-columns:1fr 1fr;}}
@@ -145,17 +204,7 @@ footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:
 .guide-arrow{margin-top:16px;font-size:13px;color:var(--ink);opacity:.45;transition:opacity .15s;}
 .guide-card:hover .guide-arrow{opacity:.9;}
 
-/* ──────────────────────────────────────────
-   언어 전환 (CSS-only, JS-independent)
-   핵심 원리:
-   - 기본(html[lang="en"]): [data-lang="en"] 표시, [data-lang="ko"] 숨김
-   - JS가 html[lang="ko"]로 바꾸면: 반전
-   JS가 없거나 느려도 영어는 항상 보임.
-   ────────────────────────────────────────── */
-:lang(ko){word-break:keep-all;line-height:1.75;}
-
 [data-lang="ko"]{ display:none; }
-
 html[lang="ko"] [data-lang="ko"]{ display:inline; }
 html[lang="ko"] [data-lang="en"]{ display:none; }
 </style>
@@ -222,7 +271,7 @@ html[lang="ko"] [data-lang="en"]{ display:none; }
     <div class="about-block">
       <p class="about-copy">
         <span data-lang="en">K LAW OFFICE provides clear guidance and steady representation within the Korean legal system.</span>
-        <span data-lang="ko" lang="ko">K LAW OFFICE는 최선의 결과에 도달하기 위한 최고의 법률 서비스를 제공합니다.</span>
+        <span data-lang="ko" lang="ko">의뢰인이 직면한 법적 문제를 명확하게 분석하고, 현실적인 해결 방향을 제시합니다.</span>
       </p>
       <p class="about-copy">
         <span data-lang="en">We handle civil disputes, criminal matters, and mediation, including criminal defense, the preparation of complaints, and representation of victims where appropriate.</span>
