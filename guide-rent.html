@@ -23,7 +23,9 @@ a{color:inherit;text-decoration:none;}a.underline{text-decoration:underline;text
 .guide-main h2{font-family:ui-serif,Georgia,"Times New Roman",Times,serif;font-size:18px;font-weight:700;margin:36px 0 10px;padding-top:28px;border-top:1px solid var(--line);}.guide-main h2:first-child{margin-top:0;padding-top:0;border-top:none;}.guide-main p{font-size:15px;color:rgba(15,23,50,.86);margin:0 0 12px;line-height:1.75;}.guide-main ul{margin:10px 0 14px 20px;padding:0;}.guide-main li{font-size:15px;color:rgba(15,23,50,.86);margin:0 0 8px;line-height:1.7;}.highlight-box{background:rgba(15,23,50,.04);border-left:3px solid var(--ink);border-radius:0 10px 10px 0;padding:14px 16px;margin:18px 0;}.highlight-box p{margin:0;font-size:14px;color:rgba(15,23,50,.80);}
 .guide-sidebar{position:sticky;top:88px;}.sidebar-card{border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff;box-shadow:0 16px 40px rgba(15,23,50,.05);}.sidebar-card h3{margin:0 0 12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}.sidebar-card p{font-size:14px;color:rgba(15,23,50,.80);margin:0 0 14px;line-height:1.65;}.cta-btn{display:block;background:var(--ink);color:#fff;text-align:center;padding:12px 18px;border-radius:10px;font-size:14px;font-weight:600;letter-spacing:.02em;transition:opacity .15s;}.cta-btn:hover{opacity:.82;}.sidebar-notice{font-size:12px;color:var(--muted);margin:10px 0 0;line-height:1.6;}.related-links{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);}.related-links h3{margin:0 0 10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}.related-links a{display:block;font-size:13.5px;color:var(--ink);padding:7px 0;border-bottom:1px solid var(--line);opacity:.75;}.related-links a:last-child{border-bottom:none;}.related-links a:hover{opacity:1;}
 footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:var(--paper);border-top:1px solid var(--line);}.foot-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:baseline;}.muted{color:var(--muted);}.notice{font-size:12.5px;color:rgba(15,23,50,.62);}
-:lang(ko){word-break:keep-all;line-height:1.75;}[data-lang]{display:none;}
+:lang(ko){word-break:keep-all;line-height:1.75;}[data-lang="ko"]{ display:none; }
+html[lang="ko"] [data-lang="ko"]{ display:inline; }
+html[lang="ko"] [data-lang="en"]{ display:none; }
 </style>
 </head>
 <body>
@@ -144,5 +146,31 @@ footer{padding:30px 0 56px;color:rgba(15,23,50,.65);font-size:12.5px;background:
   <div>© <span id="y"></span> K LAW OFFICE. All rights reserved.</div>
   <div class="muted notice"><span data-lang="en">This guide is for general informational purposes only and does not constitute legal advice.</span><span data-lang="ko" lang="ko">본 가이드는 일반적인 정보 제공 목적으로만 작성되었으며, 법률 조언을 구성하지 않습니다.</span></div>
 </div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();function applyLang(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-lang]').forEach(el=>{el.style.display=el.dataset.lang===lang?'':'none';});document.querySelectorAll('[data-set-lang]').forEach(btn=>{const a=btn.dataset.setLang===lang;btn.classList.toggle('active',a);btn.setAttribute('aria-pressed',String(a));});try{localStorage.setItem('klawoffice-lang',lang);}catch(e){}}document.querySelectorAll('[data-set-lang]').forEach(btn=>{btn.addEventListener('click',()=>applyLang(btn.dataset.setLang));});(function(){let s;try{s=localStorage.getItem('klawoffice-lang');}catch(e){}applyLang(s||(navigator.language&&navigator.language.startsWith('ko')?'ko':'en'));})();</script>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+
+function applyLang(lang){
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+    const active = btn.dataset.setLang === lang;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+
+  try{
+    localStorage.setItem('klawoffice-lang', lang);
+  }catch(e){}
+}
+
+document.querySelectorAll('[data-set-lang]').forEach(btn=>{
+  btn.addEventListener('click', ()=>applyLang(btn.dataset.setLang));
+});
+
+(function(){
+  let s;
+  try{s=localStorage.getItem('klawoffice-lang');}catch(e){}
+  applyLang(s||(navigator.language&&navigator.language.startsWith('ko')?'ko':'en'));
+})();
+</script>
 </body></html>
