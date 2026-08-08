@@ -1,20 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://klawoffice.kr/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <image:image>
+      <image:loc>https://klawoffice.kr/assets/hero-main-dispute-resolution.png</image:loc>
+      <image:title>K LAW OFFICE | Civil &amp; Criminal Litigation · Dispute Resolution</image:title>
+    </image:image>
   </url>
-
   <url>
-    <loc>https://klawoffice.kr/guide-criminal-complaint.html</loc>
+    <loc>https://klawoffice.kr/ko/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <image:image>
+      <image:loc>https://klawoffice.kr/assets/hero-main-dispute-resolution.png</image:loc>
+      <image:title>K LAW OFFICE | 민사·형사 소송 · 분쟁 해결</image:title>
+    </image:image>
   </url>
-
   <url>
-    <loc>https://klawoffice.kr/guide-police.html</loc>
+    <loc>https://klawoffice.kr/legal-guides/</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
-
   <url>
-    <loc>https://klawoffice.kr/guide-victim.html</loc>
+    <loc>https://klawoffice.kr/ko/legal-guides/</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
-
+  <url>
+    <loc>https://klawoffice.kr/practice-areas/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/practice-areas/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/guide-police</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/guide-police</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/guide-workplace</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/guide-workplace</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/guide-rent</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/guide-rent</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/guide-victim</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/guide-victim</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/guide-criminal-complaint</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/guide-criminal-complaint</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/guide-divorce</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/guide-divorce</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/guide-visa-overstay</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
+    <loc>https://klawoffice.kr/ko/guide-visa-overstay</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
 </urlset>

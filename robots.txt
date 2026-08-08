@@ -1,4 +1,7 @@
+# This wildcard policy applies to all crawlers that consult robots.txt.
+# Content-Signal expresses permitted uses; Allow expresses permitted crawl access.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: https://klawoffice.kr/sitemap.xml
