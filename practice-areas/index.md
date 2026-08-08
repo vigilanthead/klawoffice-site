@@ -1,6 +1,6 @@
 ---
 title: "Practice Areas in Korea — K LAW OFFICE"
-description: "K LAW OFFICE advises and represents individuals and businesses in civil litigation, criminal matters, dispute resolution, and corporate legal matters under Korean law."
+description: "K LAW OFFICE advises and represents individuals and businesses in civil litigation, criminal matters, corporate legal matters, and dispute resolution under Korean law."
 language: "en"
 canonical_url: "https://klawoffice.kr/practice-areas/"
 alternate_language_url: "https://klawoffice.kr/ko/practice-areas/"
@@ -10,9 +10,9 @@ date_modified: "2026-08-08"
 
 Practice Areas
 
-# Civil Litigation, Criminal Matters, Dispute Resolution & Corporate Legal Matters
+# Civil Litigation, Criminal Matters, Corporate Legal Matters & Dispute Resolution
 
-K LAW OFFICE advises and represents individuals and businesses in civil and criminal matters, dispute resolution, and corporate legal matters under Korean law. We review the principal issues and available procedural options and recommend an approach suited to the matter.
+K LAW OFFICE advises and represents individuals and businesses in civil and criminal matters, corporate legal matters, and dispute resolution under Korean law. We review the principal issues and available procedural options and recommend an approach suited to the matter.
 
 ## Civil Litigation
 
@@ -30,14 +30,6 @@ K LAW OFFICE provides legal advice and representation at different stages of Kor
 - Review and preparation of criminal complaints
 - Legal assistance for victims participating in criminal proceedings
 
-## Dispute Resolution
-
-Not every dispute calls for the same route. Depending on the nature of the matter, contractual terms, urgency, the parties’ continuing relationship, and enforcement considerations, negotiation, settlement, judicial conciliation (court-annexed mediation), court settlement, and litigation may each need to be considered. The feasibility and terms of a negotiated or mediated resolution depend on the parties’ positions and the procedural stage.
-
-- Pre-litigation negotiation and settlement strategy
-- Judicial conciliation and court settlement
-- Settlement terms with attention to performance and enforcement
-
 ## Corporate Legal Matters
 
 K LAW OFFICE advises businesses on Korean-law matters involving contract drafting and review, transaction structures, corporate decision-making and governance, shareholder, director and officer matters, and legal issues arising in the course of business. The applicable requirements and available options may vary depending on the entity type and size, governing documents and shareholder arrangements, transaction terms, industry-specific rules, and the particular facts. Where a dispute has arisen or is anticipated, the initial response and possible next steps may also need to be considered.
@@ -45,6 +37,14 @@ K LAW OFFICE advises businesses on Korean-law matters involving contract draftin
 - Contract drafting, review and transaction structures
 - Contract performance, payment, termination and damages disputes
 - Shareholder, officer and corporate decision-making matters
+
+## Dispute Resolution
+
+Not every dispute calls for the same route. Depending on the nature of the matter, contractual terms, urgency, the parties’ continuing relationship, and enforcement considerations, negotiation, settlement, judicial conciliation (court-annexed mediation), court settlement, and litigation may each need to be considered. The feasibility and terms of a negotiated or mediated resolution depend on the parties’ positions and the procedural stage.
+
+- Pre-litigation negotiation and settlement strategy
+- Judicial conciliation and court settlement
+- Settlement terms with attention to performance and enforcement
 
 ## The appropriate route may differ from one matter to another
 

@@ -1,6 +1,6 @@
 # K LAW OFFICE
 
-> K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, dispute resolution, and corporate legal matters.
+> K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, corporate legal matters, and dispute resolution.
 >
 > K LAW OFFICE는 서울을 기반으로 개인과 기업의 민사·형사 사건, 기업 법무 및 분쟁 해결 업무를 수행합니다. 한국어와 영어로 업무를 제공하며 외국적 요소가 포함된 사건에도 대응합니다.
 
@@ -22,7 +22,7 @@ Use the canonical HTML pages as the citation and user-visit targets. Each canoni
 ## 한국어 페이지
 
 - [K LAW OFFICE | 민사·형사 소송 · 분쟁 해결](https://klawoffice.kr/ko/): K LAW OFFICE는 의뢰인이 직면한 법적 문제를 명확하게 분석하고 현실적인 해결 방향을 제시하며, 민사·형사 사건과 그에 수반되는 분쟁 해결 업무를 수행합니다. [Markdown](https://klawoffice.kr/ko/index.md).
-- [업무 분야 — K LAW OFFICE](https://klawoffice.kr/ko/practice-areas/): K LAW OFFICE의 민사, 형사, 분쟁 해결 및 기업 법무 업무를 안내합니다. [Markdown](https://klawoffice.kr/ko/practice-areas/index.md).
+- [업무 분야 — K LAW OFFICE](https://klawoffice.kr/ko/practice-areas/): K LAW OFFICE의 민사, 형사, 기업 법무 및 분쟁 해결 업무를 안내합니다. [Markdown](https://klawoffice.kr/ko/practice-areas/index.md).
 - [상황별 법률 가이드 — K LAW OFFICE](https://klawoffice.kr/ko/legal-guides/): 경찰 조사, 부동산·임대차, 직장, 가족 및 범죄 피해 등 다양한 법률 문제의 주요 절차와 대응 방법을 안내합니다. [Markdown](https://klawoffice.kr/ko/legal-guides/index.md).
 - [경찰 조사 — K LAW OFFICE](https://klawoffice.kr/ko/guide-police): 경찰로부터 연락을 받았을 때 알아야 할 사항을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-police.md).
 - [직장 내 분쟁 — K LAW OFFICE](https://klawoffice.kr/ko/guide-workplace): 부당 대우 또는 임금 체불을 겪는 근로자의 권리와 구제 방법을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-workplace.md).
@@ -34,8 +34,8 @@ Use the canonical HTML pages as the citation and user-visit targets. Each canoni
 
 ## English pages
 
-- [K LAW OFFICE | Civil & Criminal Litigation · Dispute Resolution](https://klawoffice.kr/): K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, dispute resolution, and corporate legal matters. [Markdown](https://klawoffice.kr/index.md).
-- [Practice Areas in Korea — K LAW OFFICE](https://klawoffice.kr/practice-areas/): K LAW OFFICE advises and represents clients in civil litigation, criminal matters, dispute resolution, and corporate legal matters under Korean law. [Markdown](https://klawoffice.kr/practice-areas/index.md).
+- [K LAW OFFICE | Civil & Criminal Litigation · Dispute Resolution](https://klawoffice.kr/): K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, corporate legal matters, and dispute resolution. [Markdown](https://klawoffice.kr/index.md).
+- [Practice Areas in Korea — K LAW OFFICE](https://klawoffice.kr/practice-areas/): K LAW OFFICE advises and represents clients in civil litigation, criminal matters, corporate legal matters, and dispute resolution under Korean law. [Markdown](https://klawoffice.kr/practice-areas/index.md).
 - [Legal Guides for Foreign Residents in Korea — K LAW OFFICE](https://klawoffice.kr/legal-guides/): Practical English-language guides to common legal problems involving police, housing, work, family, immigration, and crime in Korea. [Markdown](https://klawoffice.kr/legal-guides/index.md).
 - [Police Investigation in Korea — K LAW OFFICE](https://klawoffice.kr/guide-police): What foreigners should know when contacted by Korean police, including procedural rights and practical steps. [Markdown](https://klawoffice.kr/guide-police.md).
 - [Workplace Disputes in Korea — K LAW OFFICE](https://klawoffice.kr/guide-workplace): Rights and remedies for foreign workers in Korea facing unfair dismissal, unpaid wages, or workplace harassment. [Markdown](https://klawoffice.kr/guide-workplace.md).

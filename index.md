@@ -1,6 +1,6 @@
 ---
 title: "K LAW OFFICE | Civil & Criminal Litigation · Dispute Resolution"
-description: "K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, dispute resolution, and corporate legal matters."
+description: "K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, corporate legal matters, and dispute resolution."
 language: "en"
 canonical_url: "https://klawoffice.kr/"
 alternate_language_url: "https://klawoffice.kr/ko/"
