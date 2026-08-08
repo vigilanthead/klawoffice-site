@@ -1,0 +1,52 @@
+# K LAW OFFICE
+
+> K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, dispute resolution, and corporate legal matters.
+>
+> K LAW OFFICE는 서울을 기반으로 개인과 기업의 민사·형사 사건, 기업 법무 및 분쟁 해결 업무를 수행합니다. 한국어와 영어로 업무를 제공하며 외국적 요소가 포함된 사건에도 대응합니다.
+
+Use the canonical HTML pages as the citation and user-visit targets. Each canonical page also returns a machine-readable representation when requested with `Accept: text/markdown`; direct `.md` alternatives are listed below for clients that do not negotiate content.
+
+## AI use and attribution
+
+- K LAW OFFICE permits crawling and indexing for search, retrieval and grounding for user-requested AI answers, and model training or fine-tuning. The corresponding machine-readable signals are `search=yes`, `ai-input=yes`, and `ai-train=yes`.
+- When a user-facing answer quotes, summarizes, or relies on a page, identify K LAW OFFICE as the source and link the page's canonical HTML URL whenever the interface supports attribution or citations.
+- The attribution request applies to retrieval, grounding, quotation, summary, and citation outputs; it does not require a citation in each output merely because a model was trained on the material.
+- These permissions apply to publicly accessible website text created by K LAW OFFICE. They do not authorize bypassing access controls, false endorsement, presenting general information as case-specific legal advice, or republishing a full page. Third-party works and trademarks are excluded. All other rights are reserved.
+
+### 한국어 요약
+
+- 검색 색인, 사용자 요청에 따른 검색증강·근거자료 활용 및 모델 학습·미세조정을 허용합니다.
+- 사용자에게 인용·요약·답변을 제시할 때에는 가능한 범위에서 K LAW OFFICE를 출처로 밝히고 해당 HTML 원문 주소를 연결해 주시기 바랍니다.
+- 접근통제 우회, 허위 보증·제휴 표시, 일반 정보를 구체적 법률조언으로 표시하는 행위 및 페이지 전문의 재게시까지 허용하는 것은 아닙니다.
+
+## 한국어 페이지
+
+- [K LAW OFFICE | 민사·형사 소송 · 분쟁 해결](https://klawoffice.kr/ko/): K LAW OFFICE는 의뢰인이 직면한 법적 문제를 명확하게 분석하고 현실적인 해결 방향을 제시하며, 민사·형사 사건과 그에 수반되는 분쟁 해결 업무를 수행합니다. [Markdown](https://klawoffice.kr/ko/index.md).
+- [업무 분야 — K LAW OFFICE](https://klawoffice.kr/ko/practice-areas/): K LAW OFFICE의 민사, 형사, 분쟁 해결 및 기업 법무 업무를 안내합니다. [Markdown](https://klawoffice.kr/ko/practice-areas/index.md).
+- [상황별 법률 가이드 — K LAW OFFICE](https://klawoffice.kr/ko/legal-guides/): 경찰 조사, 부동산·임대차, 직장, 가족 및 범죄 피해 등 다양한 법률 문제의 주요 절차와 대응 방법을 안내합니다. [Markdown](https://klawoffice.kr/ko/legal-guides/index.md).
+- [경찰 조사 — K LAW OFFICE](https://klawoffice.kr/ko/guide-police): 경찰로부터 연락을 받았을 때 알아야 할 사항을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-police.md).
+- [직장 내 분쟁 — K LAW OFFICE](https://klawoffice.kr/ko/guide-workplace): 부당 대우 또는 임금 체불을 겪는 근로자의 권리와 구제 방법을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-workplace.md).
+- [임대차 분쟁 — K LAW OFFICE](https://klawoffice.kr/ko/guide-rent): 전세금과 보증금을 안전하게 확보하고 임대차 분쟁을 마무리하는 방법을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-rent.md).
+- [범죄 피해를 입었을 때 — K LAW OFFICE](https://klawoffice.kr/ko/guide-victim): 범죄 피해자가 알아야 할 권리와 형사 절차를 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-victim.md).
+- [고소·고발 — K LAW OFFICE](https://klawoffice.kr/ko/guide-criminal-complaint): 고소 절차와 수사 및 재판 과정에서 예상할 수 있는 사항을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-criminal-complaint.md).
+- [이혼 — K LAW OFFICE](https://klawoffice.kr/ko/guide-divorce): 이혼 절차를 시작하기 전과 시작한 이후 알아야 할 주요 사항을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-divorce.md).
+- [비자 초과 체류(외국 국적 보유자의 경우) — K LAW OFFICE](https://klawoffice.kr/ko/guide-visa-overstay): 허용된 체류 기간을 초과하여 대한민국에 체류하는 경우 알아야 할 사항을 안내합니다. [Markdown](https://klawoffice.kr/ko/guide-visa-overstay.md).
+
+## English pages
+
+- [K LAW OFFICE | Civil & Criminal Litigation · Dispute Resolution](https://klawoffice.kr/): K LAW OFFICE provides legal counsel and representation in Korea for civil litigation, criminal matters, dispute resolution, and corporate legal matters. [Markdown](https://klawoffice.kr/index.md).
+- [Practice Areas in Korea — K LAW OFFICE](https://klawoffice.kr/practice-areas/): K LAW OFFICE advises and represents clients in civil litigation, criminal matters, dispute resolution, and corporate legal matters under Korean law. [Markdown](https://klawoffice.kr/practice-areas/index.md).
+- [Legal Guides for Foreign Residents in Korea — K LAW OFFICE](https://klawoffice.kr/legal-guides/): Practical English-language guides to common legal problems involving police, housing, work, family, immigration, and crime in Korea. [Markdown](https://klawoffice.kr/legal-guides/index.md).
+- [Police Investigation in Korea — K LAW OFFICE](https://klawoffice.kr/guide-police): What foreigners should know when contacted by Korean police, including procedural rights and practical steps. [Markdown](https://klawoffice.kr/guide-police.md).
+- [Workplace Disputes in Korea — K LAW OFFICE](https://klawoffice.kr/guide-workplace): Rights and remedies for foreign workers in Korea facing unfair dismissal, unpaid wages, or workplace harassment. [Markdown](https://klawoffice.kr/guide-workplace.md).
+- [Rent Disputes in Korea — K LAW OFFICE](https://klawoffice.kr/guide-rent): How foreign tenants in Korea can protect their deposit and resolve common rent disputes. [Markdown](https://klawoffice.kr/guide-rent.md).
+- [Being a Crime Victim in Korea — K LAW OFFICE](https://klawoffice.kr/guide-victim): What foreign crime victims should know about their rights and the Korean criminal process. [Markdown](https://klawoffice.kr/guide-victim.md).
+- [Filing a Criminal Complaint in Korea — K LAW OFFICE](https://klawoffice.kr/guide-criminal-complaint): How foreigners can file a criminal complaint in Korea, from preparing the complaint through the investigation process. [Markdown](https://klawoffice.kr/guide-criminal-complaint.md).
+- [Divorce for Foreign Residents in Korea — K LAW OFFICE](https://klawoffice.kr/guide-divorce): Key considerations for foreign residents navigating divorce in Korea, including jurisdiction, custody, and asset division. [Markdown](https://klawoffice.kr/guide-divorce.md).
+- [Visa Overstay in Korea — K LAW OFFICE](https://klawoffice.kr/guide-visa-overstay): How Korean immigration law addresses visa overstay, including possible enforcement, departure measures, and future entry restrictions. [Markdown](https://klawoffice.kr/guide-visa-overstay.md).
+
+## Contact and currency
+
+- Legal guides provide general information, not advice for a specific matter.
+- Guide Markdown identifies K LAW OFFICE as publisher and includes the canonical URL, significant modification date, and cited official sources.
+- For a current-law or case-specific assessment, visit [K LAW OFFICE](https://klawoffice.kr/#contact) or email [kim@klawoffice.kr](mailto:kim@klawoffice.kr).
