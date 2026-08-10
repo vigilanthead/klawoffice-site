@@ -5,6 +5,8 @@ const PAGE_REPRESENTATIONS = new Map([
   ["/ko/practice-areas/", "/ko/practice-areas/index.md"],
   ["/legal-guides/", "/legal-guides/index.md"],
   ["/ko/legal-guides/", "/ko/legal-guides/index.md"],
+  ["/guide-contract-disputes", "/guide-contract-disputes.md"],
+  ["/ko/guide-contract-disputes", "/ko/guide-contract-disputes.md"],
   ["/guide-police", "/guide-police.md"],
   ["/ko/guide-police", "/ko/guide-police.md"],
   ["/guide-workplace", "/guide-workplace.md"],

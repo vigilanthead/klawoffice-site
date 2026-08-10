@@ -1,18 +1,18 @@
 ---
 title: "Legal Guides for Foreign Residents in Korea — K LAW OFFICE"
-description: "Practical English-language guides to common legal problems involving police, housing, work, family, immigration, and crime in Korea."
+description: "Practical English-language guides to contract and payment disputes, police matters, housing, work, family, immigration, and crime in Korea."
 language: "en"
 canonical_url: "https://klawoffice.kr/legal-guides/"
 alternate_language_url: "https://klawoffice.kr/ko/legal-guides/"
 publisher: "K LAW OFFICE"
-date_modified: "2026-07-28"
+date_modified: "2026-08-10"
 ---
 
 Korean legal information
 
 # Legal Guides for Foreign Residents
 
-Practical starting points for legal problems involving police, housing, work, family, immigration, and crime in Korea. Choose the situation closest to yours, then review the process, documents, and deadlines that may matter.
+Practical starting points for contract and payment disputes, police matters, housing, work, family, immigration, and crime in Korea. Choose the situation closest to yours, then review the process, documents, and deadlines that may matter.
 
 **Built for clear next steps**
 
@@ -21,6 +21,8 @@ Guides explain what the process is, what to preserve or prepare, and when indivi
 ## Choose your situation
 
 These guides provide general information. The applicable law, procedure, and best course of action can change with the facts and timing of a particular matter.
+
+- Civil — [Contract and Payment Disputes in Korea](/guide-contract-disputes) — What to review when contractual obligations are not performed, payment remains outstanding, or a claim for damages arises.
 
 - Criminal process — [Police Investigation in Korea](/guide-police) — What foreigners should know when contacted by Korean police, including procedural rights and practical steps.
 

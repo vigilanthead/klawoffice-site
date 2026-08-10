@@ -1,11 +1,11 @@
 ---
 title: "상황별 법률 가이드 — K LAW OFFICE"
-description: "경찰 조사, 부동산·임대차, 직장, 가족 및 범죄 피해 등 다양한 법률 문제의 주요 절차와 대응 방법을 안내합니다."
+description: "계약·대금, 경찰 조사, 부동산·임대차, 직장, 가족 및 범죄 피해 등 다양한 법률 문제의 주요 절차와 대응 방법을 안내합니다."
 language: "ko"
 canonical_url: "https://klawoffice.kr/ko/legal-guides/"
 alternate_language_url: "https://klawoffice.kr/legal-guides/"
 publisher: "K LAW OFFICE"
-date_modified: "2026-07-29"
+date_modified: "2026-08-10"
 ---
 
 법률 정보
@@ -21,6 +21,8 @@ date_modified: "2026-07-29"
 ## 현재 상황에 맞는 가이드를 선택해 보십시오
 
 아래 내용은 일반적인 안내입니다. 적용 법령과 절차, 적절한 대응 방법은 구체적인 사실관계와 사건의 진행 단계 및 시점에 따라 달라질 수 있습니다.
+
+- 민사 — [계약·대금 및 손해배상 분쟁](/ko/guide-contract-disputes) — 계약 이행, 대금·대여금, 손해배상 및 계약 해제·해지와 관련하여 확인해야 할 사항을 안내합니다.
 
 - 형사 절차 — [경찰 조사](/ko/guide-police) — 경찰로부터 연락을 받았을 때 알아야 할 사항을 안내합니다.
 
