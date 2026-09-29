@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **K LAW OFFICE**  
-Effective date: September 29, 2026
+Effective date: March 7, 2026
 
 K LAW OFFICE processes personal information in accordance with the Personal Information Protection Act of the Republic of Korea (PIPA) and other applicable laws.
 
