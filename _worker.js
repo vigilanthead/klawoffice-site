@@ -1,6 +1,8 @@
 const PAGE_REPRESENTATIONS = new Map([
   ["/", "/index.md"],
   ["/ko/", "/ko/index.md"],
+  ["/privacy/", "/privacy/index.md"],
+  ["/ko/privacy/", "/ko/privacy/index.md"],
   ["/practice-areas/", "/practice-areas/index.md"],
   ["/ko/practice-areas/", "/ko/practice-areas/index.md"],
   ["/legal-guides/", "/legal-guides/index.md"],
