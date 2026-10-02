@@ -5,7 +5,7 @@ language: "ko"
 canonical_url: "https://klawoffice.kr/ko/legal-guides/"
 alternate_language_url: "https://klawoffice.kr/legal-guides/"
 publisher: "K LAW OFFICE"
-date_modified: "2026-08-10"
+date_modified: "2026-10-02"
 ---
 
 법률 정보
@@ -26,7 +26,7 @@ date_modified: "2026-08-10"
 
 - 형사 절차 — [경찰 조사](/ko/guide-police) — 경찰로부터 연락을 받았을 때 알아야 할 사항을 안내합니다.
 
-- 주거 — [임대차 분쟁](/ko/guide-rent) — 전세금과 보증금을 안전하게 확보하고 임대차 분쟁을 마무리하는 방법을 안내합니다.
+- 주거 — [임대차 분쟁](/ko/guide-rent) — 전세금과 임대차보증금을 안전하게 확보하고 임대차 분쟁을 마무리하는 방법을 안내합니다.
 
 - 직장 — [직장 내 분쟁](/ko/guide-workplace) — 부당 대우 또는 임금 체불을 겪는 근로자의 권리와 구제 방법을 안내합니다.
 

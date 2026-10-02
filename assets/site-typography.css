@@ -169,3 +169,31 @@ html:lang(en) .practice-hero h1 {
     font-size:12px;
   }
 }
+
+
+/* Korean labels above headings were too small relative to their titles. */
+html:lang(ko) .eyebrow,
+html:lang(ko) .section-label,
+html:lang(ko) .guide-eyebrow,
+html:lang(ko) .hero-guide-kicker,
+html:lang(ko) .guide-tag,
+html:lang(ko) .issue-intro span,
+html:lang(ko) .issue-link small {
+  font-size:13px;
+  line-height:1.45;
+  letter-spacing:.08em;
+}
+
+html:lang(ko) .issue-link span {
+  text-wrap:balance;
+}
+
+/* The Korean home practice cards no longer use numeric kickers. */
+html:lang(ko) #civil-mediation .practice-card {
+  min-height:240px;
+}
+@media (max-width:720px) {
+  html:lang(ko) #civil-mediation .practice-card {
+    min-height:auto;
+  }
+}
