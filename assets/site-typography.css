@@ -188,48 +188,9 @@ html:lang(ko) .issue-link span {
   text-wrap:balance;
 }
 
-/* The Korean home practice cards no longer use numeric kickers. */
-html:lang(ko) #civil-mediation .practice-card {
-  min-height:240px;
-}
-@media (max-width:720px) {
-  html:lang(ko) #civil-mediation .practice-card {
-    min-height:auto;
-  }
-}
-
 
 /* Desktop density refinements: preserve the visual hierarchy while reducing empty space. */
 @media (min-width:881px) {
-  body:has(#home-hero) {
-    --max:1300px;
-  }
-  body:has(#home-hero) .hero {
-    padding:50px 0 28px;
-  }
-  body:has(#home-hero) .hero-grid {
-    gap:46px;
-  }
-  body:has(#home-hero) .trust-strip {
-    margin-top:30px;
-  }
-  body:has(#home-hero) .issue-paths {
-    padding:20px 0 24px;
-  }
-  body:has(#home-hero) .issue-link {
-    min-height:100px;
-  }
-  body:has(#home-hero) .section {
-    padding:56px 0;
-  }
-  body:has(#home-hero) .section-head {
-    margin-bottom:24px;
-  }
-  body:has(#home-hero) .practice-card,
-  body:has(#home-hero) .guide-card {
-    min-height:auto;
-  }
-
   body:has(.guide-hub-main) {
     --max:1260px;
   }
