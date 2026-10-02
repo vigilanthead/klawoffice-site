@@ -5,7 +5,7 @@ language: "en"
 canonical_url: "https://klawoffice.kr/"
 alternate_language_url: "https://klawoffice.kr/ko/"
 publisher: "K LAW OFFICE"
-date_modified: "2026-08-08"
+date_modified: "2026-10-02"
 ---
 
 K LAW OFFICE · Seoul, Republic of Korea
@@ -78,23 +78,17 @@ Expertise
 
 The appropriate route depends on the facts, evidence, timing, and the outcome the client needs. K LAW OFFICE considers court proceedings together with settlement and other resolution paths.
 
-01
-
 ### Civil Litigation
 
 -   Contract, payment, and damages claims
 -   Evidence organization and court filings
 -   Case strategy through judgment and enforcement
 
-02
-
 ### Criminal Matters
 
 -   Defense during investigation and trial
 -   Preparation and filing of criminal complaints
 -   Representation of victims where appropriate
-
-03
 
 ### Dispute Resolution
 
