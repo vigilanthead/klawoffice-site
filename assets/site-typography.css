@@ -197,3 +197,90 @@ html:lang(ko) #civil-mediation .practice-card {
     min-height:auto;
   }
 }
+
+
+/* Desktop density refinements: preserve the visual hierarchy while reducing empty space. */
+@media (min-width:881px) {
+  body:has(#home-hero) {
+    --max:1300px;
+  }
+  body:has(#home-hero) .hero {
+    padding:50px 0 28px;
+  }
+  body:has(#home-hero) .hero-grid {
+    gap:46px;
+  }
+  body:has(#home-hero) .trust-strip {
+    margin-top:30px;
+  }
+  body:has(#home-hero) .issue-paths {
+    padding:20px 0 24px;
+  }
+  body:has(#home-hero) .issue-link {
+    min-height:100px;
+  }
+  body:has(#home-hero) .section {
+    padding:56px 0;
+  }
+  body:has(#home-hero) .section-head {
+    margin-bottom:24px;
+  }
+  body:has(#home-hero) .practice-card,
+  body:has(#home-hero) .guide-card {
+    min-height:auto;
+  }
+
+  body:has(.guide-hub-main) {
+    --max:1260px;
+  }
+  body:has(.guide-hub-main) .guide-hub-hero {
+    padding:54px 0 40px;
+  }
+  body:has(.guide-hub-main) .hero-grid {
+    gap:44px;
+  }
+  body:has(.guide-hub-main) .guide-hub-main {
+    padding:54px 0;
+  }
+  body:has(.guide-hub-main) .guide-card {
+    min-height:auto;
+  }
+  body:has(.guide-hub-main) .guide-hub-note {
+    padding:40px 0;
+  }
+  body:has(.guide-hub-main) .section-head {
+    margin-bottom:24px;
+  }
+
+  body:has(.practice-main) {
+    --max:1260px;
+  }
+  body:has(.practice-main) .practice-hero {
+    padding:54px 0 40px;
+  }
+  body:has(.practice-main) .hero-grid {
+    gap:44px;
+  }
+  body:has(.practice-main) .practice-main {
+    padding:54px 0;
+  }
+  body:has(.practice-main) .practice-note {
+    padding:40px 0;
+  }
+}
+
+@media (min-width:681px) {
+  .guide-page .sub-hero {
+    min-height:clamp(280px,30svh,340px);
+  }
+  .guide-page .guide-body {
+    padding:34px 0 40px;
+  }
+  .guide-page .guide-layout {
+    gap:36px;
+  }
+  .guide-page .guide-main h2 {
+    margin-top:30px;
+    padding-top:22px;
+  }
+}
