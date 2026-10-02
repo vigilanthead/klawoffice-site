@@ -188,60 +188,12 @@ html:lang(ko) .issue-link span {
   text-wrap:balance;
 }
 
-
-/* Desktop density refinements: preserve the visual hierarchy while reducing empty space. */
-@media (min-width:881px) {
-  body:has(.guide-hub-main) {
-    --max:1260px;
-  }
-  body:has(.guide-hub-main) .guide-hub-hero {
-    padding:54px 0 40px;
-  }
-  body:has(.guide-hub-main) .hero-grid {
-    gap:44px;
-  }
-  body:has(.guide-hub-main) .guide-hub-main {
-    padding:54px 0;
-  }
-  body:has(.guide-hub-main) .guide-card {
-    min-height:auto;
-  }
-  body:has(.guide-hub-main) .guide-hub-note {
-    padding:40px 0;
-  }
-  body:has(.guide-hub-main) .section-head {
-    margin-bottom:24px;
-  }
-
-  body:has(.practice-main) {
-    --max:1260px;
-  }
-  body:has(.practice-main) .practice-hero {
-    padding:54px 0 40px;
-  }
-  body:has(.practice-main) .hero-grid {
-    gap:44px;
-  }
-  body:has(.practice-main) .practice-main {
-    padding:54px 0;
-  }
-  body:has(.practice-main) .practice-note {
-    padding:40px 0;
-  }
+/* The Korean home practice cards no longer use numeric kickers. */
+html:lang(ko) #civil-mediation .practice-card {
+  min-height:240px;
 }
-
-@media (min-width:681px) {
-  .guide-page .sub-hero {
-    min-height:clamp(280px,30svh,340px);
-  }
-  .guide-page .guide-body {
-    padding:34px 0 40px;
-  }
-  .guide-page .guide-layout {
-    gap:36px;
-  }
-  .guide-page .guide-main h2 {
-    margin-top:30px;
-    padding-top:22px;
+@media (max-width:720px) {
+  html:lang(ko) #civil-mediation .practice-card {
+    min-height:auto;
   }
 }
